@@ -16,3 +16,7 @@ def single_letter_count(word, letter):
             appearances += 1
 
     return appearances
+
+
+# also 
+# return word.count(letter)
