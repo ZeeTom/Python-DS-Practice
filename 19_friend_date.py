@@ -16,3 +16,5 @@ def friend_date(a, b):
         >>> friend_date(sauron, gandalf)
         True
     """
+
+    return bool(a[2] & b[2])

@@ -1,3 +1,6 @@
+from typing import Counter
+
+
 def mode(nums):
     """Return most-common number in list.
 
@@ -11,3 +14,23 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+
+    counter = {}
+    highest = 0
+    most_common = None
+
+    for num in nums:
+        if num not in counter:
+            counter[num] = 1
+        else:
+            counter[num] += 1
+
+    for key in counter:
+        if counter[key] > highest:
+            most_common = key  
+            highest = counter[most_common]
+
+    return most_common
+
+
+    
