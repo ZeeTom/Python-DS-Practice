@@ -24,3 +24,23 @@ def truncate(phrase, n):
         >>> truncate("Well", 3)
         '...'
     """
+
+    try:
+        if type(n) != int:
+            print('error raised')
+            raise('Error')     
+    except Exception:
+        print('N must be an integer')
+
+    if n < 3:
+        return 'Truncation must be at least 3 characters.'
+
+    if len(phrase) >= n:
+        return phrase[0:n-3] + '...'
+
+    else: 
+        return phrase
+
+
+    
+truncate('awesome', 3)
