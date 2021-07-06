@@ -17,9 +17,6 @@ def flip_case(phrase, to_swap):
             new_string.append(char.swapcase())
         else:
             new_string.append(char)
-
         
     return "".join(new_string)
-
-
 

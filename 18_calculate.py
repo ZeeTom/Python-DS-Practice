@@ -26,11 +26,10 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         >>> calculate('foo', 2, 3) is None
         True
     """
-    import math
 
     if make_int:
-        a = math.floor(a)
-        a = math.floor(b)
+        a = int(a)
+        a = int(b)
 
     if operation == 'add':
         return f'{message} {a + b}'
