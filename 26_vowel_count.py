@@ -9,7 +9,7 @@ def vowel_count(phrase):
     """
 
     vowels = ['a', 'e', 'i', 'o', 'u']
-    vowel_counter = {}; 
+    vowel_counter = {}
 
     for char in phrase:
         if char.lower() in vowels:
@@ -18,3 +18,6 @@ def vowel_count(phrase):
             vowel_counter[char.lower()] += 1
     
     return vowel_counter
+#collections library has a built in frequency counter
+#Class called Counter
+# from collections import Counter

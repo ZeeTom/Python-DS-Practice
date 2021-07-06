@@ -31,7 +31,7 @@ def includes(collection, sought, start=None):
         True
     """
     
-    
+    #use any(), and isinstance() for type checking
     if start and not type(collection) == set and not type(collection) == dict:
         collection = collection[start:]
 

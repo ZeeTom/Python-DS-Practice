@@ -12,3 +12,5 @@ def list_check(lst):
             return False
             
     return True
+#all function, like .every() in JS
+# return all([type(ele) == list for ele in lst])

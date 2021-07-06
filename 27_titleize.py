@@ -10,3 +10,4 @@ def titleize(phrase):
     words = phrase.lower().split(" ")
     words = [word.capitalize() for word in words]
     return " ".join(words)
+    # return phrase.title()

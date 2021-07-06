@@ -22,13 +22,13 @@ def sum_pairs(nums, goal):
         ()
     """
 
-    seen_nums = {}
+    seen_nums = set()
 
     for num in nums:
         if goal-num in seen_nums:
             return (goal - num, num)
         else:
-            seen_nums[num] = True
+            seen_nums.add(num)
 
     return tuple()
  
